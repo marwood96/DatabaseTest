@@ -1,0 +1,593 @@
+@font-face {
+    font-family: "Oswald-regular";
+    src: url(Fonts/Oswald-Regular.ttf);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Oswald-regular";
+    background-color: rgba(202, 202, 202, 0.274);
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black; 
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+
+/* ----------- HEADER SECTION ----------- */
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(112, 103, 103);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 60px;
+    background-color: rgb(7, 4, 151);
+}
+
+.navbarLinks {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navbarLinks > li {
+    display: flex;
+    flex-grow: 1;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.navbarLinks > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbarLinks > li > a:hover  {
+    text-decoration: none;
+    color: rgb(222, 238, 75);
+
+}
+
+#upperHeader {
+    display: flex;
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    height: 150px;
+    
+}
+
+#headerFeatures {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: rgb(7, 4, 151);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    #upperHeader {
+        height: auto;
+        margin-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        margin-top: 60px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+
+
+}
+
+/* ----------- HOME PAGE ----------- */
+
+#container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #f3f5fa;
+    border: 1px solid;
+    border-top: none;
+    border-color: rgba(0, 0, 0, 0.171);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    border-right: 1px solid rgba(112, 103, 103, 0.315);
+    margin-right: -1px;
+}
+
+#content2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 10px;
+    
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-color: #6767683a;
+    text-align: center;
+    
+}
+
+.article1 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(112, 103, 103, 0.315);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.articleImage {
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    margin-bottom: -30px;
+    
+}
+
+.articleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+}
+
+#highlight {
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+@media only screen and (max-width: 1250px) {
+    #container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .articles {
+        border-left: none;
+    }
+
+    #highlight {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #content {
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+
+
+}
+
+
+#trendingArticles {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.list1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box {
+    display: inline-flex;
+    flex-direction: row;
+    min-height: 300px;
+    width: 700px;
+    background-color: #f3f5fa;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boxImage {
+    width: 350px;
+}
+.boxContent {
+    width: 350px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1145px) {
+    #trendingArticles {
+        flex-direction: column; /* Stack the article lists vertically */
+        align-items: center; /* Center the child elements */
+    }
+
+    .list1, .list2 {
+        width: 100%; /* Make the list containers take full width of their parent */
+    }
+
+    .box {
+        flex-direction: column;
+        width: 100%; /* Adjust the box width to take full width of its parent container */
+        max-width: 350px; /* Optional: Set a max-width to prevent the boxes from becoming too wide */
+    }
+
+    .boxImage, .boxContent {
+        width: 100%; /* Ensure the image and content take full width of their parent */
+    }
+}
+
+
+/* --------- ADVICE PAGE --------- */
+#adviceArticle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(112, 103, 103, 0.315);
+}
+#container2 {
+    display: flex;
+    flex-direction: row; /* Default direction */
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f3f5fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#left, #right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+/* Adding media query */
+@media (max-width: 768px) {
+    #container2 {
+        flex-direction: column; /* Change direction */
+    }
+
+    #left, #right {
+        width: 100%; /* Make each take full width */
+        border-right: none; /* Remove border from #left as it's no longer needed */
+    }
+
+    #adviceArticle {
+        /* Adjustments for smaller screens */
+        max-width: 100%;
+    }
+}
+
+
+/* --------- ABOUT PAGE --------- */
+
+#container3 {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #f3f5fa;
+    border: 1px solid;
+    border-top: none;
+    border-color: rgba(0, 0, 0, 0.171);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(112, 103, 103, 0.315);
+    margin-bottom: 50px;
+}
+
+#about2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.teamImage {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#row1, #row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#row1 {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* --------- CONTACT PAGE --------- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(21, 21, 122);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: rgb(21, 21, 122)
+}
+
+/* Add a background color and some padding around the form */
+#contactForm {
+    border-radius: 5px;
+    background-color: #f3f5fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+} 
+
+#liveChat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f3f5fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+#chatList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#chat1, #chat2, #chat3 {
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    width: 33%;
+}
+
+#chat1 {
+    border-right: 1px solid rgba(112, 103, 103, 0.315);
+}
+
+#chat3 {
+    border-left: 1px solid rgba(112, 103, 103, 0.315);
+}
+
+.chatImages {
+    max-width: 400px;
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 1400px) {
+    #liveChat {
+        width: 100%;
+        padding-right: 0px;
+    }
+    #chatList {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #chat1, #chat3 {
+        border: none;
+    }
+
+    #chat1, #chat2, #chat3 {
+        width: 100%;
+    }
+
+
+    #chat1, #chat2 {
+        border-bottom: 1px solid rgba(112, 103, 103, 0.315);
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* --------- FOOTER --------- */
+
+footer {
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    border-top: 2px solid;
+    border-color: black;
+    background-color: rgb(21, 21, 122);
+}
+
+.footerlists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    padding: 0 20px; 
+    color: white;
+}
+
+.footerlists1, .footerlists2, .footerlists3 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 33%; 
+}
+
+.footerlists ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+}
+
+.footerlists li {
+    font-size: 18px;
+    margin: 5px 0; 
+}
+
+.footerlists li:first-child {
+    padding-bottom: 30px;
+}
+
+.footerlists3 > ul > li > a  {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footerlists2 > ul > li > a  {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footerlists1 > ul > li > a  {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footerlists3 > ul > li > a:hover  {
+    text-decoration: none;
+    color: rgb(222, 238, 75);
+    cursor: pointer;
+
+}
+
+.footerlists2 > ul > li > a:hover  {
+    text-decoration: none;
+    color: rgb(222, 238, 75);
+    cursor: pointer;
+}
+
+.footerlists1 > ul > li > a:hover  {
+    text-decoration: none;
+    color: rgb(222, 238, 75);
+    cursor: pointer;
+}
